@@ -1,0 +1,142 @@
+@import'../global';
+.header{
+    width: 100%;
+    height: 450px;
+    // border: $border;
+    margin: 0 auto;
+    // padding: 30px 0;
+    &__nav{
+        width: 100%;
+        height: 20%;
+        // border: $border;
+        margin: 0 auto;
+        background: var(--surface, #FFF);
+        // position: fixed; 
+        // top: 0;
+        // left: 0;
+        // right: 0;
+        // z-index: 99;
+
+        /* Default/S */
+        box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
+        &_navbar{
+            display: flex;
+            margin: 0 auto;
+            width: 80%;
+            height: 100%;
+            // border: $border;
+            &-1bolim{
+                display: flex;
+                width: 60%;
+                height: 100%;
+                // border: $border;
+                &-imgg{
+                    display: flex;
+                    margin: 0 auto;
+                    @include center();
+                    width: 30%;
+                    height: 100%;
+                    // border: $border;
+                    
+                }
+                &-button{
+                    width: 25%;
+                    height: 100%;
+                    // border: $border;
+                    display: flex;
+                    margin: 0 auto;
+                    @include center();
+                   &-buton{
+                    display: flex;
+                    width: 140px;
+                    padding: 8px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 4px;
+                    background: var(--main-secondary, #70C05B);
+                    color: var(--main-on-secondary, #FFF);
+                    text-align: center;
+                    
+                    /* Desc/Text/S */
+                    font-family: Rubik;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 24px */
+                   img{
+                    width: 24px;
+                    flex-shrink: 0;
+                    height: 24px;
+                   }
+                    
+                   }                   
+                }
+                &-input{
+                    display: flex;
+                    @include center();
+                    width: 45%;
+                    height: 100%;
+                    // border: $border;
+                    &-inputt{
+                        display: flex;
+                        height: 40px;
+                        padding: 8px;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 10px;
+                        flex: 1 0 0;
+                        border-radius: 4px;
+                        border: 1px solid var(--main-secondary, #70C05B);
+                        background: var(--main-surface, #FFF);
+                        
+                    }
+                }
+            }
+            &-2bolim{
+                // display: flex;
+                width: 40%;
+                height: 100%;
+                // border: $border;
+                &-ul{
+                    // padding-top: 23px;
+                    display: flex;
+                    justify-content: space-around;
+                    list-style: none;
+                    margin: 0 auto;
+                    &-li{
+                        &-li1{
+                            padding-top: 23px;
+                        }
+                        &-li4{
+                            padding-top: 17px;
+
+                        }
+                    }
+                   
+                    
+                }
+            }
+        }
+
+    }
+    &__backround{
+        width: 100%;
+        height: 80%;
+        background-image: url(../../img/Group\ 7100.png);
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+        overflow: hidden;
+        // background-color: #70C05B;
+        &_rasm{
+            width: 80%;
+            height: 100%;
+            // border: $border;
+            margin: 0 auto;
+            display: flex;
+            @include center();
+        }
+    }
+
+}
